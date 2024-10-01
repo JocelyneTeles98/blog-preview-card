@@ -9,7 +9,7 @@
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 0.688rem; /*Font-size should be in rem  */ 
     text-align: center; 
 }
     
@@ -68,7 +68,7 @@ body {
     width: 100%;
 }
 
-.content-date p {   
+.date p {   
     font-weight: 500;
 }
 
@@ -77,20 +77,20 @@ body {
     border-radius: 4px;
     font-weight: 800;
     height: fit-content;
-    line-height: 0%;
+    line-height: 0;
     padding: 2px 12px;
     width: fit-content;
 }
 
 .paragraph p {
     color: #6B6B6B;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 
 h1 {
-    font-size: 24;
+    font-size: 1.5rem;
     font-weight: 800;
     overflow-wrap: break-word; /* Avoid text overflows */
     transition: color 0.3s;
@@ -108,7 +108,7 @@ h1:hover {
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875rem;
     overflow-wrap: break-word;
 }
 
