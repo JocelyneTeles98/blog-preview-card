@@ -1,5 +1,11 @@
-* {
+/* Use a more-intuitive box-sizing model*/
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0,
 }
 
 .attribution { 
@@ -22,17 +28,22 @@
 }
 
 .avatar-pic {
+    display: block;
     height: 40px;
+    max-width: 100%;
     width: 40px;
 }
 
+/*Typographic tweaks! Add accessible line-height and improve text rendering*/
 body {
     background-color: #F4D04E;
     color: #111111;
     display: grid;
     font-family: "Figtree", serif;
+    line-height: 1.5;
     height: 100vh;
     place-items: center;
+    -webkit-font-smoothing: antialiased;
 }
 
 .blog-card {
@@ -59,7 +70,6 @@ body {
 
 .content-date p {   
     font-weight: 500;
-    line-height: 120%;
 }
 
 .content-label {
@@ -81,9 +91,11 @@ body {
     font-weight: 500;
 }
 
+
 h1 {
     font-size: 24;
     font-weight: 800;
+    overflow-wrap: break-word; /* Avoid text overflows */
     transition: color 0.3s;
 }
 
@@ -91,11 +103,18 @@ h1:hover {
     color: #F4D04E;
 }
 
+
 .illustration {
     border-radius: 10px;
-    width: 100%;
+    display: block; /* Improove media defaults*/
+    max-width: 100%;
 }
 
 p {
     font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
 }
